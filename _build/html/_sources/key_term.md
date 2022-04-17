@@ -18,4 +18,6 @@
 | Systematic error       | Errors that always consistently cause the measurement to deviate from the true(or expected value) in the same way  |  |
 | Zero error             |  A subtype of systematic error, where the error is caused by the instrument not beginning at zero, causing measurement to consistently be above or below |  |
 | Percentage error       |  (Measured - True)/(True) * 100% |  |
+| Median                 | Value in the middle when sorted | Better representative of data than mean when there are points skewing the graph |
+|Mode | most common values|  |
 

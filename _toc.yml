@@ -5,4 +5,11 @@ format: jb-book
 root: intro
 chapters:
 - file: key_term.md
+- file: errors.ipynb
 - file: basic_concepts.ipynb
+- file: howto_experiments.ipynb
+- file: recording.ipynb
+- file: graph_plotting.ipynb
+- file: future_ideas.ipynb
+- file: chemistry_specific.ipynb
+- file: physics_specific.ipynb
