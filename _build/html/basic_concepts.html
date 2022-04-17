@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&lt;no title&gt; &#8212; A Level Practical</title>
+    <title>Basic Concepts in A level Practical &#8212; A Level Practical</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,6 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Key Terms in A Level Practical" href="key_term.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -96,14 +97,14 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="key_term.html">
    Key Terms in A Level Practical
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="basic_concepts.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Basic Concepts in A level Practical
   </a>
  </li>
@@ -148,7 +149,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/temporary.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/basic_concepts.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -173,7 +174,7 @@ const thebe_selector_output = ".output, .cell_output"
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/temporary.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/basic_concepts.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -194,7 +195,12 @@ const thebe_selector_output = ".output, .cell_output"
                 <i class="fas fa-list"></i> Contents
             </div>
             <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#accuracy-vs-precision">
+   Accuracy vs Precision
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -205,7 +211,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1><no title></h1>
+                <h1>Basic Concepts in A level Practical</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -214,7 +220,12 @@ const thebe_selector_output = ".output, .cell_output"
                             <h2> Contents </h2>
                         </div>
                         <nav aria-label="Page">
-                            <ul class="simple visible nav section-nav flex-column">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#accuracy-vs-precision">
+   Accuracy vs Precision
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -224,7 +235,47 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  
+  <div class="tex2jax_ignore mathjax_ignore section" id="basic-concepts-in-a-level-practical">
+<h1>Basic Concepts in A level Practical<a class="headerlink" href="#basic-concepts-in-a-level-practical" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="accuracy-vs-precision">
+<h2>Accuracy vs Precision<a class="headerlink" href="#accuracy-vs-precision" title="Permalink to this headline">¶</a></h2>
+<p>In essence, precision has nothing to do with true value. Precision simply means how close together are the measured data. If the measured data is very close together, then it is precise.</p>
+<p>Accuracy has everything to with true value. Accurate simply means that the measured value is close to the true value.</p>
+<p>The following plot has been made to show the difference between precision and accuracy, suggested inputs to precision or accuracy is from 0 to 10. Bigger numbers means more precision/accuracy.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">source</span> <span class="kn">import</span> <span class="n">accuracy_vs_precision</span>
+
+<span class="n">accuracy_vs_precision</span><span class="p">(</span><span class="n">precision</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+                      <span class="n">accuracy</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+                      <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Precise and Accurate&#39;</span><span class="p">)</span>
+
+<span class="n">accuracy_vs_precision</span><span class="p">(</span><span class="n">precision</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
+                      <span class="n">accuracy</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                      <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Precise and Not Accurate&#39;</span><span class="p">)</span>
+
+<span class="n">accuracy_vs_precision</span><span class="p">(</span><span class="n">precision</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+                      <span class="n">accuracy</span> <span class="o">=</span> <span class="mi">7</span><span class="p">,</span>
+                      <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Not Precise but Accurate&#39;</span><span class="p">)</span>
+
+<span class="n">accuracy_vs_precision</span><span class="p">(</span><span class="n">precision</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                      <span class="n">accuracy</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
+                      <span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Not Precise and Not Accurate&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/basic_concepts_2_0.png" src="_images/basic_concepts_2_0.png" />
+<img alt="_images/basic_concepts_2_1.png" src="_images/basic_concepts_2_1.png" />
+<img alt="_images/basic_concepts_2_2.png" src="_images/basic_concepts_2_2.png" />
+<img alt="_images/basic_concepts_2_3.png" src="_images/basic_concepts_2_3.png" />
+</div>
+</div>
+</div>
+</div>
+
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
@@ -249,7 +300,14 @@ const thebe_selector_output = ".output, .cell_output"
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="key_term.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Key Terms in A Level Practical</p>
+        </div>
+    </a>
 </div>
             
         </div>
